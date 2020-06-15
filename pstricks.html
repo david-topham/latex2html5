@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/latex2js@latest/latex2js.css">
+    <script src="https://cdn.jsdelivr.net/npm/latex2html5@latest/latex2html5.bundle.js"></script>
+  </head>
+  <body>
+    <p id="pstricks">  PStricks </p>
+    <script type="text/latex">
+\begin{pspicture}(-4,-3)(4,3)
+\uservariable{alpha}(0,0){x}
+\psplot[algebraic,linewidth=2pt,fillstyle=solid, fillcolor=lightblue]{-4}{alpha}{sin(x)}
+\psplot[algebraic,linewidth=2pt]{-4}{4}{sin(x)}
+\psline{->}(-4,0)(4,0)
+\end{pspicture}
+    </script>
+    <script>
+    LaTeX2HTML5.init();
+    </script>
+  </body>
+</html>
+    
+    
