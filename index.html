@@ -9,21 +9,12 @@
     \LaTeX
     </script>  
     <script type="text/latex">
-\begin{center}
-\begin{pspicture}(-4,-4)(4,4)
- \pscircle(-3.3,2.5){0.4}
- \pscircle(-3.3,-2.5){0.4}
- \pscircle(3.3,-2.5){0.4}
- \pscircle(3.3,2.5){0.4}
-\psline{->}(-2.9,2.5)(2.9,2.5)
-\rput(0,2.8){00}
-\psline{->}(3.3,2.1)(3.3,-2.1)
-\rput(3.6,0){00}
-\psline{->}(2.9,-2.5)(-2.9,-2.5)
-\rput(0,-2.8){01,11}
-\psarc[fillcolor=white]{->}(-3.7,0){2}{-90}{90}
+\begin{pspicture}(-4,-3)(4,3)
+\uservariable{alpha}(0,0){x}
+\psplot[algebraic,linewidth=2pt,fillstyle=solid, fillcolor=lightblue]{-4}{alpha}{sin(x)}
+\psplot[algebraic,linewidth=2pt]{-4}{4}{sin(x)}
+\psline{->}(-4,0)(4,0)
 \end{pspicture}
-\end{center}
     </script>
     <script>
     LaTeX2HTML5.init();
