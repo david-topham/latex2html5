@@ -1,46 +1,29 @@
 <html>
   <head>
-	  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>MathJax example</title>
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async
-          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-  </script>
-    <link rel="stylesheet" href="latex2js.css">
-    <script src="latex2html5.bundle.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/latex2js@latest/latex2js.css">
+    <script src="https://cdn.jsdelivr.net/npm/latex2html5@latest/latex2html5.bundle.js"></script>
   </head>
   <body>
 	  Try latex2html5  with PStricks
     <script type="text/latex">
     \LaTeX
-    </script>
-    
+    </script>  
     <script type="text/latex">
-
 \begin{center}
 \begin{pspicture}(-4,-4)(4,4)
-
  \pscircle(-3.3,2.5){0.4}
  \pscircle(-3.3,-2.5){0.4}
  \pscircle(3.3,-2.5){0.4}
  \pscircle(3.3,2.5){0.4}
-
 \psline{->}(-2.9,2.5)(2.9,2.5)
 \rput(0,2.8){00}
-
 \psline{->}(3.3,2.1)(3.3,-2.1)
 \rput(3.6,0){00}
-
 \psline{->}(2.9,-2.5)(-2.9,-2.5)
 \rput(0,-2.8){01,11}
-
 \psarc[fillcolor=white]{->}(-3.7,0){2}{-90}{90}
-
 \end{pspicture}
 \end{center}
-
-  
     </script>
     <script>
     LaTeX2HTML5.init();
